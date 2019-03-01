@@ -57,7 +57,7 @@ client.on('message', msg => {
     // <END> Trigger & response enable/disable routine
     for (trigger_counter = 0;trigger_counter <= trigger_Array.length - 1;trigger_counter++)
     {
-      if (parsed_input2[input_counter] == trigger_Array[trigger_counter] && response_flag == 1) // Only respond if flag is set to 1
+      if ((parsed_input2[input_counter] == trigger_Array[trigger_counter]) && response_flag == 1) // Only respond if flag is set to 1
       {
         // Generate a random number based on number of indices in response_Array
         random_index = Math.floor((Math.random() * 15) + 1);
